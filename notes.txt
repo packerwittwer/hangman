@@ -1,0 +1,61 @@
+draw out the hangman image
+for each incorrect letter (a count), print out that many lines from the second image. The rest of the 8 lines are then printed from the first image. if the count of the incorrect letters = 8, then print out 'you lose'.
+
+
+the word will be printed out as '_' for each unguessed letter, and the letter for each guessed letter
+the list of guessed letters will be printed out underneath everything
+
+
+"  _______"
+"  |/      |"
+"  |"
+"  |"
+"  |"
+"  |"
+"  |"
+"__|_____"
+
+and
+
+"   _______"
+"   |/      |"
+"   |      (_)"
+"   |      \|/"
+"   |       |"
+"   |      / \"
+"   |"
+" __|_____"
+
+
+
+
+
+
+
+Write one or more programs in C++ that demonstrates the following 5 things:
+
+1. Conditionals
+
+2. Loops
+
+3. Functions
+
+4. Classes
+
+5. Data structure from STL (such as a vector, list, or map)
+
+Stretch Challenges (select one):
+
+1. Modify your program to read and write to a file.
+
+2. Modify your program to demonstrates inheritance with virtual functions.
+
+3. Modify your program to use the new and delete operators to dynamically create objects.
+
+
+
+
+commands to compile (in this order)
+g++ -std=c++11 -c C:\Users\packe\dev\hangman\hangman.cpp -o C:\Users\packe\dev\hangman\hangman.o
+g++ -std=c++11 -c C:\Users\packe\dev\hangman\Word.cpp -o C:\Users\packe\dev\hangman\Word.o
+g++ C:\Users\packe\dev\hangman\hangman.o C:\Users\packe\dev\hangman\Word.o -o C:\Users\packe\dev\hangman\hangman.exe
